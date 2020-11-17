@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h2>A page with Three dropdown and 1 scatter plot chart</h2>
+    <!-- <h2>A page with Three dropdown and 1 scatter plot chart</h2> -->
     <select v-model="sector_selected">
       <option
         v-for="sector in sectors"
@@ -39,7 +39,7 @@ select {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin: 20px;
+  margin: 50px;
   width: 100px;
 }
 </style>

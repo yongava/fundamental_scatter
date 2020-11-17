@@ -1,6 +1,6 @@
 <template>
   <div class="chart">
-     <VueApexCharts width="500" type="scatter" :options="chartOptions" :series="series"></VueApexCharts>
+     <VueApexCharts width="1000" type="scatter" :options="chartOptions" :series="series"></VueApexCharts>
   </div>
 </template>
 <style>
