@@ -79,16 +79,12 @@ export default {
     VueApexCharts,
   },
   props: [
-    "dots"
+    "series",
+    "x_title",
+    "y_title",
   ],
   data() {
     return {
-      series: [
-        {
-          name: "SAMPLE A",
-          data: this.dots,
-        },
-      ],
       chartOptions: {
         chart: {
           height: 350,
@@ -105,9 +101,15 @@ export default {
               return parseFloat(val).toFixed(1);
             },
           },
+          title: {
+            text: this.x_title,
+          },
         },
         yaxis: {
           tickAmount: 7,
+          title: {
+            text: this.y_title,
+          },
         },
       },
     };
